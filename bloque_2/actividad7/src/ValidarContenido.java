@@ -5,7 +5,8 @@ import java.util.List;
 
 public class ValidarContenido{
     public static void main(String[] args) throws IOException {
-        File archivo = new File("archivo.csv");
+        File archivo = new File(args[0]);
+        //preguntar al jefe sebas si está bien y que cambiar o poner como public y privado pq me da muchos errores si lo hago yo
 
         if (archivo.exists()){
             System.out.println("Existe el archivo.");
